@@ -50,12 +50,12 @@
 		    <th mat-header-cell *matHeaderCellDef> Action </th>
 		    <td mat-cell *matCellDef="let vendor">
 		    	<mat-select placeholder="Select an action">
-		    			<mat-option [value]="Details" routerLink="/vendor-detail/{{ vendor.id }}">View Detail </mat-option>
-						<mat-option [value]="Namecard" routerLink="/vendorimage/namecard/{{ vendor.id }}">Namecard</mat-option>
-						<mat-option [value]="Offeringsample" routerLink="/vendorimage/offeringsample/{{ vendor.id }}">Offering Sample</mat-option>
-						<mat-option [value]="Invoicesample" routerLink="/vendorimage/invoicesample/{{ vendor.id }}">Invoice Sample</mat-option>
-						<mat-option [value]="Receiptsample" routerLink="/vendorimage/receiptsample/{{ vendor.id }}">Receipt Sample</mat-option>
-		    		<mat-option [value]="Delete" (click)="openDialog(vendor.id)">Delete</mat-option>
+		    			<mat-option value="Details" routerLink="/vendor-detail/{{ vendor.id }}">View Detail </mat-option>
+						<mat-option value="Namecard" routerLink="/vendorimage/namecard/{{ vendor.id }}">Namecard</mat-option>
+						<mat-option value="Offeringsample" routerLink="/vendorimage/offeringsample/{{ vendor.id }}">Offering Sample</mat-option>
+						<mat-option value="Invoicesample" routerLink="/vendorimage/invoicesample/{{ vendor.id }}">Invoice Sample</mat-option>
+						<mat-option value="Receiptsample" routerLink="/vendorimage/receiptsample/{{ vendor.id }}">Receipt Sample</mat-option>
+		    		<mat-option value="Delete" (click)="openDialog(vendor.id)">Delete</mat-option>
 		    	</mat-select>
 		    </td>
 		  </ng-container>

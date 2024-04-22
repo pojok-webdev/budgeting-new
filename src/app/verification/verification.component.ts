@@ -9,17 +9,22 @@ import { RejectDescriptionDialogComponent } from '../reject-description-dialog/r
 import { CommonService } from '../common.service';
 import { ImageService } from '../image.service';
 import { ActivitylogService } from '../activitylog.service';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatListModule } from '@angular/material/list';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-verification',
   templateUrl: './verification.component.html',
-  styleUrls: ['./verification.component.css']
+  styleUrls: ['./verification.component.css'],
+  standalone:true,
+  imports:[MatFormFieldModule,MatListModule,CommonModule]
 })
 export class VerificationComponent implements OnInit {
 submissionId
 logindata:any
 newAttribute:any
-obj = {subject:'',itemname:'',staff_name:'',budgeting_number:'',creatoremail:'',reject_reason:'',verificationreason:''}
+obj = {subject:'',itemname:'',staff_name:'',budgeting_number:'',creatoremail:'',reject_reason:'',purchase_reason:'',purchase_target:'',verificationreason:'',implementation_target:'',totalprice:'',submission_date:''}
   constructor(
     private submission:SubmissionService,
     private activatedRoute:ActivatedRoute,

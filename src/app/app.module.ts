@@ -74,7 +74,9 @@ import { PlafonsComponent, PlafonsDialog } from './plafons/plafons.component';
 import { MyproductimagesComponent } from './myproductimages/myproductimages.component';
 import { TestgetvendorComponent } from './testgetvendor/testgetvendor.component';
 import { PadiSubmissionsComponent } from './padi-submissions/padi-submissions.component';
-import { PadiSubmissionDetailComponent } from './padi-submission-detail/padi-submission-detail.component';
+/*start of remove 2024-04-22*/
+//import { PadiSubmissionDetailComponent } from './padi-submission-detail/padi-submission-detail.component';
+/*end of remove 2024-04-22*/
 import { CommonConfirmerComponent } from './common-confirmer/common-confirmer.component';
 import { SubmissionEditComponent } from './submission-edit/submission-edit.component';
 import { AddVendorDialogComponent } from './add-vendor-dialog/add-vendor-dialog.component';
@@ -195,7 +197,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   providers: [DatePipe, CurrencyPipe,{ provide: MAT_DIALOG_DATA, useValue: {} },
     { provide: MatDialogRef, useValue: {} },
     provideAnimationsAsync()],
-  entryComponents:[
+  /*entryComponents:[
     UserChangepasswordComponent, 
     ProductDialog,
     VendorDialog, 
@@ -218,7 +220,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     RemoveDialogComponent,RejectDescriptionDialogComponent,
     SubmissionInfoComponent,ApprovalDialogComponent,
     ViewPOComponent
-    ],
+    ],*/
   bootstrap: [AppComponent]
 })
 export class AppModule { }

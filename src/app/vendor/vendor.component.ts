@@ -11,6 +11,11 @@ import { ProductService } from '../product.service';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
 import { ImageService } from '../image.service';
+import { MatOptionModule } from '@angular/material/core';
+import { Routes,RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 export interface DialogData {
   id: Number;
@@ -20,7 +25,9 @@ export interface DialogData {
 @Component({
   selector: 'app-vendor',
   templateUrl: './vendor.component.html',
-  styleUrls: ['./vendor.component.css']
+  styleUrls: ['./vendor.component.css'],
+  standalone:true,
+  imports:[MatPaginator,MatOptionModule,RouterModule,CommonModule,FormsModule,MatSelectModule,MatIconModule]
 })
 export class VendorComponent implements OnInit {
   displayedColumns: string[] = ['no', 'id', 'name', 'address', 'phone', 'bank', 'action']

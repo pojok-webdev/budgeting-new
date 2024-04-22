@@ -44,5 +44,9 @@ nopo = ''
   }
   ngOnInit() {
   }
-
+  /*start tambahan 2024-04-22*/
+  showInputDialog(){
+    document.getElementById('uplComponent')!.click()
+  }
+  /*end tambahan 2024-04-22*/
 }
